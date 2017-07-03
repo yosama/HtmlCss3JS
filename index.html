@@ -8,9 +8,10 @@
 	</head>
 
 	<body>
-		<header>
-			<h1>Batman</h1>
-			<img src="./img/batman.jpg" alt="Foto de Batman">
+		<header class="header">
+			<h1 class="title">Batman</h1>
+			<img  class="title-img" src="./img/batman.jpg" alt="Foto de Batman">
+			<p class="title-quoted">"El puede tomar la decision que nadie mas puede, la decision correcta"</p>
 		</header>
 
 		<nav class="navbar">
@@ -25,19 +26,107 @@
 		</nav>
 
 		<main>
-			<section>
-			
+			<section class="about-me">
+				<div class="batman-video">Esto es un video</div>
+				<div class="batman-info">
+					<h2>Quien soy</h2>
+					<strong>Batman:</strong>
+					<span class="batman-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos quibusdam facilis provident numquam quisquam architecto error temporibus maxime eos sapiente inventore neque, corporis, recusandae eligendi eveniet labore incidunt. Ad, iste.</span>
+				</div>
 			</section>
-			<section>
 
+			<section class="team">
+				<div>
+					<article class="team-member">
+						<header>
+							<h3>
+							 	Alfred Pennyworth
+							 	<span class="real-name">(Michael Caine)</span>
+							</h3>
+							<h4 class="position">Mayordomo</h4>
+						</header>
+						<figure class="team-member-photo">
+							<img src="./img/alfred.jpg" alt="Alfred">
+							<figcaption class="photo-name">
+								Alfred Pennyworth
+							</figcaption>
+						</figure>
+						<p class="bio">
+							"Por que caemos señor, para que aprendamos a levantarnos" - <cite>Batman Begins</cite> 
+						</p>
+					</article>
+				</div>
+
+				<div>
+					<article class="team-member">
+							<header>
+								<h3>
+								 	Harvey Dent
+								 	<span class="real-name">(Aaron Eckhart)</span>
+								</h3>
+								<h4 class="position">Fiscal del distrito</h4>
+							</header>
+							<figure class="team-member-photo">
+								<!-- <img src="./img/harvey.jpg" alt="Harvey"> -->
+								<figcaption class="photo-name">
+									Harvey Dent
+								</figcaption>
+							</figure>
+							<p class="bio">
+								"O mueres como un heroe, o vives lo suficiente como para convertirte en el villano" - <cite>Batman El caballero Oscuro</cite>
+							</p>
+					</article>
+				</div>
+
+				<div>
+					<article class="team-member">
+						<header>
+							<h3>
+								James Gordon
+								<span class="real-name">(Gary Oldman)</span>
+							</h3>
+							<h4 class="position">Policia</h4>
+						</header>
+						<figure class="team-member-photo">
+							<img src="./img/gordon.jpg" alt="James Gordon">
+							<figcaption class="photo-name">
+								James Gordon
+							</figcaption>
+						</figure>
+						<p class="bio">
+							El es el heroe que Gotham merece, pero no lo necesita en este momento - <cite>Batman El caballero Oscuro</cite>
+						</p>
+					</article>
+				</div>
 			</section>
-			<section>
+
+			<section class="transport">
+				<div>
+					<div class="transport-item">
+						<figure>
+							<img src="./img/car.jpg" alt="Coche Batman">
+							<figcaption>Coche Batman</figcaption>
+						</figure>
+						<p class="transport-info">
+							Fabricado en el a&ntilde;o <time datetime="2005">2005</time> y se uso durante toda la triologia.
+						</p>
+					</div>
+					<div class="transport-item">
+						<figure>
+							<img src="./img/moto.jpg" alt="Moto Batman">
+							<figcaption>Moto Batman</figcaption>
+						</figure>
+						<p class="transport-info">
+							Fabricado en el año <time datetime="2005">2005</time> y se uso durante toda la triologia.
+						</p>
+					</div>
+				</div>
 				
 			</section>
 		</main>
 
-		<footer>
-			
+		<footer class="footer">
+			Yosnier Samon &copy; 2017 Coderice
 		</footer>
 		
 	</body>
