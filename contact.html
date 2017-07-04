@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Contacto</title>
+</head>
+<body>
+	<nav class="navbar">
+		<ul class="navbar-list">
+			<li class="navbar-item"><a href="">Inicio</a></li>
+			<li class="navbar-item"><a href="">Quien soy</a></li>
+			<li class="navbar-item"><a href="">Equipo</a></li>
+			<li class="navbar-item"><a href="">Transporte</a></li>
+			<li class="navbar-item" active><a href="">Contacto</a></li>
+			<li class="navbar-item"><a href="">Tareas</a></li>
+		</ul>
+	</nav>
+	
+	<main>
+		<section class="contact">
+			<h2>Contacta con nosotros</h2>
+			<div>
+				<div>
+					Aqui va un mapa
+				</div>
+				<div>
+					<div class="form">
+						<form name="contacto" method="get" action="#" >
+							<div class="form-row">
+								<label for="firstname">Firstname:</label>
+								<input type="text" id="firstname" name="firstname" placeholder="Firstname" required>
+
+								<label for="lastname">Lastname:</label>
+								<input type="text" id="lastname" name="lastname" placeholder="Lastname" required>
+							</div>
+
+							<div class="form-row">
+								<label for="email">Email:</label>
+								<input type="email" name="email" placeholder="hello@company.com" pattern="[A-Za-z0-9\.\+]+@[A-Za-z0-9]+\.[A-Za-z0-9\.]+]" required>
+							</div>
+
+							<div class="form-row">
+								<div>Mision Type:</div>
+									<label for="mision_type_1">Rescue</label>
+									<input type="radio" id="mision_type_1" name="mision_type" value="Rescue" required>
+
+									<label for="mision_type_2">Account settings</label>
+									<input type="radio" id="mision_type_2" name="mision_type" value="Account settings" required>
+
+									<label for="mision_type_3">Shot and explosive</label>
+									<input type="radio" id="mision_type_3" name="mision_type" value="Shot and explosive" required>
+							</div>
+
+							<div class="form-row">
+								<label for="army">Army:</label>
+								<input type="number" id="army" name="army" min="10" required>
+							</div>
+
+							<div class="form-row">
+								<label for="date">Fecha del Trabajo:</label>
+								<input type="date" id="date" required>
+							</div>
+
+							<div class="form-row">
+								<input type="submit" value="Send">
+							</div>
+						</form>
+					</div>
+					
+				</div>
+			</div>
+		</section>
+		<section class="product-price">
+			
+		</section>
+	</main>
+</body>
+</html>
