@@ -1,3 +1,46 @@
 * {
 	font-family: 'Roboto', sans-serif;
 }
+
+body {
+	margin: 0;
+	padding: 0;
+}
+
+.clearfix:after{
+	content: " ";
+	visibility: hidden;
+	display: block;
+	height: 0;
+	clear: both;
+}
+
+.navbar {
+	background-color: #F7F7F7;
+	width:100%;
+	position: fixed;
+	top: 0;
+}
+
+.navbar > .navbar-list {
+	list-style-type: none;
+	margin:0;
+	float:right;
+
+}
+
+.navbar > .navbar-list > .navbar-item {
+	display: inline;
+}
+
+.navbar > .navbar-list > .navbar-item a {
+	padding: 20px;
+	text-decoration: none;
+	color: rgba(0, 0, 0, 0.9);
+	display: inline-block;
+}
+
+.navbar > .navbar-list > .navbar-item.active a {
+	color: #F7F7F7;
+	background-color: #A4A4A4;
+}
