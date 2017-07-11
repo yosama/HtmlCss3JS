@@ -89,6 +89,12 @@ body {
 	max-width: 50%;
 }
 
+.team-member-photo > img{
+	height: 300px;
+	max-width: 100%;
+	border-radius: 50%;
+}
+
 
 
 
