@@ -32,6 +32,7 @@ body {
 	width:100%;
 	position: fixed;
 	top: 0;
+	z-index: 1;
 }
 
 .navbar > .navbar-list {
@@ -89,8 +90,6 @@ body {
 	animation-delay:0.8s;
 	visibility: hidden;
 }
-
-
 
 .title-quoted {
 	position: absolute;
