@@ -85,6 +85,9 @@ body {
 	position: absolute;
 	font-size: 100px;
 	font-family: batman;
+	animation:titleAnimation 2s backwards;
+	animation-delay:0.8s;
+	visibility: hidden;
 }
 
 
@@ -98,6 +101,10 @@ body {
 	color: white;
 	font-size: 28px;
 	font-family: batman;
+	animation:subtitleAnimation 3s forwards;
+	-webkit-animation-delay: 1s;
+	-o-animation-delay: 1s;
+	animation-delay: 1s;
 }
 
 .section-container{
@@ -224,6 +231,32 @@ th, td{
 
 tbody > tr:hover{
 	background-color: #ddd;
+}
+
+@keyframes titleAnimation{
+	0%{
+		font-size: 200px;
+	}
+	50%{
+		font-size: 180px;
+	}
+	100%{
+		font-size: 100px;
+		visibility: visible;
+	}
+
+}
+
+@keyframes subtitleAnimation{
+	0%{
+		opacity: 0;
+	}
+	50%{
+		opacity: 0.5 ;
+	}
+	100%{
+		opacity: 1;
+	}
 }
 
 
