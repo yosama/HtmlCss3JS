@@ -6,7 +6,7 @@
 
 :root{
 	--grid-number:12;
-};
+}
 
 .row:before, .row:after {
 	content: "";
@@ -31,7 +31,7 @@
 	float: left;
 }
 .col-5{
-	width: calc(calc(100% / var(--grid-number)) * 5)
+	width: calc(calc(100% / var(--grid-number)) * 5);
 	float: left;
 }
 .col-6{

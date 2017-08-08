@@ -52,15 +52,15 @@ body {
 	text-decoration: none;
 	color: rgba(0, 0, 0, 0.9);
 	display: inline-block;
-	transition: all 2s linear;
+	transition: all 0.5s linear;
 }
 
 .navbar > .navbar-list > .navbar-item.active a {
 	color: var(--main-text-color);
-	background-color: var (--secondary-text-color);
+	background-color: var(--secondary-text-color);
 }
  .navbar > .navbar-list > .navbar-item a:hover{
- 	color: var (--main-text-color);
+ 	color: var(--main-text-color);
  	background-color: var(--secondary-text-color);
  }
 
@@ -206,9 +206,8 @@ input[type=button], input[type=submit], button{
 }
 
 table {
-	width: 100px;
+	width: 100%;
 	border-collapse: collapse;
-
 }
 
 thead > tr{
@@ -217,6 +216,7 @@ thead > tr{
 
 th {
 	height: 50px;
+	font-weight: bold;
 }
 
 th, td {
