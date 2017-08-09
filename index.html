@@ -18,17 +18,17 @@
 
 		<nav class="navbar">
 			<ul class="navbar-list">
-				<li class="navbar-item active"><a href="">Inicio</a></li>
-				<li class="navbar-item"><a href="">Quien soy</a></li>
-				<li class="navbar-item"><a href="">Equipo</a></li>
-				<li class="navbar-item"><a href="">Transporte</a></li>
+				<li class="navbar-item active"><a href="#">Inicio</a></li>
+				<li class="navbar-item"><a href="#about-me">Quien soy</a></li>
+				<li class="navbar-item"><a href="#team">Equipo</a></li>
+				<li class="navbar-item"><a href="#transport">Transporte</a></li>
 				<li class="navbar-item"><a href="contact.html">Contacto</a></li>
 				<li class="navbar-item"><a href="">Tareas</a></li>
 			</ul>
 		</nav>
 
 		<main class="container"> 
-			<section class="about-me clearfix section-container">
+			<section id="about-me" class="about-me clearfix section-container">
 				<div class="batman-video">
 					<video width="550" height="300" controls>
 						<source src="./video/batman.mp4" type="video/mp4">
@@ -42,7 +42,7 @@
 				</div>
 			</section>
 
-			<section class="team section-reverse section-container clearfix">
+			<section id="team" class="team section-reverse section-container clearfix">
 				<div class="row container">
 					<div class="col-4">
 						<article class="team-member">
@@ -117,7 +117,7 @@
 				</div>
 			</section>
 	
-			<section class="transport section-container">
+			<section id="transport" class="transport section-container">
 				<div class="row-flex">
 					<div class="transport-item">
 						<figure>
@@ -146,5 +146,6 @@
 			Yosnier Samon &copy; 2017 Coderice
 		</footer>
 	</body>
+    <script src="./js/menu.js"></script>
     <script src="./js/animation.js"></script>
 </html>
