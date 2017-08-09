@@ -10,6 +10,8 @@ console.log(navbarItems);
 for (var i = 0; i < navbarItems.length; i ++) {
     navbarItems[i].addEventListener('click', function(){
         var sectionToGo = this.getElementsByTagName('a')[0].href.split("#");
+        deleteClassActive();
+        this.classList.add('active');
         if (sectionToGo.length === 2) {
             event.preventDefault();
             var goTo = sectionToGo[sectionToGo.length - 1];
@@ -41,5 +43,11 @@ function scrollToElement(element) {
         }, 50);
     } else {
         element.lastDistance = null;
+    }
+}
+
+function deleteClassActive (){
+    for (var i = 0; i < navbarItems.length; i ++) {
+        navbarItems[i].classList.remove('active');
     }
 }
