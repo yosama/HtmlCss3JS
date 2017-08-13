@@ -5,8 +5,6 @@
 
 var navbarItems = document.getElementsByClassName("navbar-item");
 
-console.log(navbarItems);
-
 for (var i = 0; i < navbarItems.length; i ++) {
     navbarItems[i].addEventListener('click', function(){
         var sectionToGo = this.getElementsByTagName('a')[0].href.split("#");
@@ -80,7 +78,6 @@ function changeMenuStyle (){
         }
         deleteClassActive()
         document.querySelector('a[href="#"]').parentNode.classList.add('active');
-        console.log("misma seccion");
     } else if (pageOffset >= offsetAboutMe && pageOffset < offsetTeam) {
         if (!previous || previous !== 2){
             previous = 2;
@@ -89,7 +86,6 @@ function changeMenuStyle (){
         }
         deleteClassActive()
         document.querySelector('a[href$="about-me"]').parentNode.classList.add('active');
-        console.log("misma seccion");
     } else if (pageOffset >= offsetTeam && offsetAboutMe < offsetTransport) {
         if (!previous || previous !== 3 ){
             previous = 3;
@@ -98,6 +94,5 @@ function changeMenuStyle (){
         }
         deleteClassActive()
         document.querySelector('a[href$="team"]').parentNode.classList.add('active');
-        console.log("misma seccion");
     }
 }

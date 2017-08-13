@@ -4,11 +4,12 @@
 	margin: 0 auto;
 }
 
-:root{
+body{
 	--grid-number:12;
 }
 
-.row:before, .row:after {
+.row:before,
+.row:after {
 	content: "";
 	display: table;
 	clear: both;
@@ -21,7 +22,7 @@
 .col-2{
 	width: calc(calc(100% / var(--grid-number)) * 2);
 	float: left;
-}	
+}
 .col-3{
 	width: calc(calc(100% / var(--grid-number)) * 3);
 	float: left;
@@ -35,7 +36,7 @@
 	float: left;
 }
 .col-6{
-	width: calc(calc(100% / var(--grid-number)) * 6)
+	width: calc(calc(100% / var(--grid-number)) * 6);
 	float: left;
 }
 .col-7{
@@ -43,7 +44,7 @@
 	float: left;
 }
 .col-8{
-	width: calc(calc(100% / var(--grid-number)) * 8)
+	width: calc(calc(100% / var(--grid-number)) * 8);
 	float: left;
 }
 .col-9{
@@ -66,7 +67,6 @@
 .row-flex{
 	display: flex;
 	flex-flow:row wrap;
-
 }
 
 .transport-item{
