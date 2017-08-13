@@ -4,6 +4,7 @@
 	<meta charset="UTF-8">
 	<link rel="stylesheet" href="./css/style.css" type="text/css">
 	<link rel="stylesheet" href="./css/grid.css" type="text/css">
+	<link rel="stylesheet" href="./css/font-awesome.css" type="text/css">
 	<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
 	
 	<script src="http://maps.googleapis.com/maps/api/js?key=AIzaSyA-jpiiZm0kg4wbYwPvUtNZvyLbiNcz6p8"></script>
@@ -50,7 +51,7 @@
 				</div>
 				<div class="col-6">
 					<div class="form">
-						<form name="contacto" method="get" action="#" >
+						<form name="contacto" method="get" action="#" novalidate >
 							<div class="form-row">
 								<label for="firstname">Firstname:</label>
 								<input type="text" id="firstname" name="firstname" placeholder="Firstname" required>
@@ -61,19 +62,19 @@
 
 							<div class="form-row">
 								<label for="email">Email:</label>
-								<input type="email" name="email" placeholder="hello@company.com" pattern="[A-Za-z0-9\.\+]+@[A-Za-z0-9]+\.[A-Za-z0-9\.]+]" required>
+								<input id="email" type="email" name="email" placeholder="hello@company.com" pattern="[A-Za-z0-9\.\+]+@[A-Za-z0-9]+\.[A-Za-z0-9\.]+" required>
 							</div>
 
 							<div class="form-row">
 								<div>Mision Type:</div>
-								<label for="mision_type_1">Rescue</label>
-								<input type="radio" id="mision_type_1" name="mision_type" value="Rescue" required>
+								<label for="mission_type_1">Rescue</label>
+								<input type="radio" id="mission_type_1" name="mission_type" value="Rescue" required>
 
-								<label for="mision_type_2">Account settings</label>
-								<input type="radio" id="mision_type_2" name="mision_type" value="Account settings" required>
+								<label for="mission_type_2">Account settings</label>
+								<input type="radio" id="mission_type_2" name="mission_type" value="Account settings" required>
 
-								<label for="mision_type_3">Shot and explosive</label>
-								<input type="radio" id="mision_type_3" name="mision_type" value="Shot and explosive" required>
+								<label for="mission_type_3">Shot and explosive</label>
+								<input type="radio" id="mission_type_3" name="mission_type" value="Shot and explosive" required>
 							</div>
 
 							<div class="form-row">
@@ -87,7 +88,7 @@
 							</div>
 
 							<div class="form-row">
-								<input type="submit" value="Send">
+								<button id="btnSend" type="submit">Send</button>
 							</div>
 						</form>
 					</div>
@@ -128,4 +129,5 @@
 		Yosnier Samon &copy; 2017 Coderice
 	</footer>
 </body>
+<script src="./js/form.js"></script>
 </html>
