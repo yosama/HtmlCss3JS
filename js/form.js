@@ -60,6 +60,7 @@ form.addEventListener("submit", function(event){
     event.preventDefault();
 
     setTimeout(function(){
+        form.reset();
         btnSend.removeAttribute("disabled");
         btnSend.removeChild(loadingIcon);
     },1000);
