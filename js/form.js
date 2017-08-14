@@ -63,8 +63,7 @@ form.addEventListener("submit", function(event){
         form.reset();
         btnSend.removeAttribute("disabled");
         btnSend.removeChild(loadingIcon);
+        sendNotificate('Form received', "Example of body");
     },1000);
-
-
 })
 
